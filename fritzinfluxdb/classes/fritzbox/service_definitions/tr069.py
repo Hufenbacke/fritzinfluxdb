@@ -148,59 +148,5 @@ tr069_services.extend([
         "value_instances": {
             "NewDNSServers": "internal_dns_servers:str"
         }
-    },
-    {
-        "name": "WLANConfiguration:1",
-        "actions": [
-            "GetInfo",
-            "GetTotalAssociations"
-        ],
-        "value_instances": {
-            "NewStatus": "wlan1_status:str",
-            "NewChannel": "wlan1_channel:int",
-            "NewSSID": "wlan1_ssid:str",
-            "NewStandard": "wlan1_802.11_standard:str",
-            "NewTotalAssociations": "wlan1_associations:int"
-        }
-    },
-    {
-        "name": "WLANConfiguration:2",
-        "actions": [
-            "GetInfo",
-            "GetTotalAssociations"
-        ],
-        "value_instances": {
-            "NewStatus": "wlan2_status:str",
-            "NewChannel": "wlan2_channel:int",
-            "NewSSID": "wlan2_ssid:str",
-            "NewStandard": "wlan2_802.11_standard:str",
-            "NewTotalAssociations": "wlan2_associations:int"
-        }
-    },
-    {
-        "name": "WLANConfiguration:3",
-        "actions": [
-            "GetInfo",
-            "GetTotalAssociations"
-        ],
-        "value_instances": {
-            "NewStatus": "wlan3_status:str",
-            "NewChannel": "wlan3_channel:int",
-            "NewSSID": "wlan3_ssid:str",
-            "NewStandard": "wlan3_802.11_standard:str",
-            "NewTotalAssociations": "wlan3_associations:int"
-        }
-    },
-    {
-        "name": "X_AVM-DE_RemoteAccess",
-        "actions": ["GetDDNSInfo"],
-        "value_instances": {
-            "NewEnabled": "ddns_enabled:bool",
-            "NewProviderName": "ddns_provider_name:str",
-            "NewDomain": "ddns_domain:str",
-            "NewStatusIPv4": "ddns_status_ipv4:str",
-            "NewStatusIPv6": "ddns_status_ipv6:str",
-            "NewMode": "ddns_mode:str"
-        }
     }
 ])
