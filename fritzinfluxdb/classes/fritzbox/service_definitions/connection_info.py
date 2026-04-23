@@ -152,7 +152,7 @@ lua_services.append({
                 "data_path": "data.channelDs.docsis31",
                 "type": list,
                 "next": {
-                    "type": float,
+                    "type": str,
                     "value_function": lambda data: data.get("frequency"),
                     "tags_function": lambda data: {"id": data.get("channelID")}
                 },
@@ -192,7 +192,7 @@ lua_services.append({
                 "data_path": "data.channelDs.docsis30",
                 "type": list,
                 "next": {
-                    "type": float,
+                    "type": str,
                     "value_function": lambda data: data.get("frequency"),
                     "tags_function": lambda data: {"id": data.get("channelID")}
                 },
@@ -272,7 +272,7 @@ lua_services.append({
                 "data_path": "data.channelUs.docsis31",
                 "type": list,
                 "next": {
-                    "type": float,
+                    "type": str,
                     "value_function": lambda data: data.get("frequency"),
                     "tags_function": lambda data: {"id": data.get("channelID")}
                 },
@@ -322,7 +322,7 @@ lua_services.append({
                 "data_path": "data.channelUs.docsis30",
                 "type": list,
                 "next": {
-                    "type": float,
+                    "type": str,
                     "value_function": lambda data: data.get("frequency"),
                     "tags_function": lambda data: {"id": data.get("channelID")}
                 },
@@ -420,7 +420,7 @@ lua_services.append({
                 "data_path": "data.channelDs.docsis31",
                 "type": list,
                 "next": {
-                    "type": float,
+                    "type": str,
                     "value_function": lambda data: data.get("frequency"),
                     "tags_function": lambda data: {"id": data.get("channelID")}
                 },
@@ -492,7 +492,7 @@ lua_services.append({
                 "data_path": "data.channelDs.docsis30",
                 "type": list,
                 "next": {
-                    "type": float,
+                    "type": str,
                     "value_function": lambda data: data.get("frequency"),
                     "tags_function": lambda data: {"id": data.get("channelID")}
                 },
@@ -544,7 +544,7 @@ lua_services.append({
                 "data_path": "data.channelUs.docsis31",
                 "type": list,
                 "next": {
-                    "type": float,
+                    "type": str,
                     "value_function": lambda data: data.get("frequency"),
                     "tags_function": lambda data: {"id": data.get("channelID")}
                 },
@@ -586,7 +586,7 @@ lua_services.append({
                 "data_path": "data.channelUs.docsis30",
                 "type": list,
                 "next": {
-                    "type": float,
+                    "type": str,
                     "value_function": lambda data: data.get("frequency"),
                     "tags_function": lambda data: {"id": data.get("channelID")}
                 },
