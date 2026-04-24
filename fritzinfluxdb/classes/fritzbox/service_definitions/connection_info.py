@@ -520,6 +520,16 @@ lua_services.append({
                 },
                 "exclude_filter_function": exclude_filter_docsis31
             },
+            "cable_channel_us_docsis31_channel": {
+                "data_path": "data.channelUs.docsis31",
+                "type": list,
+                "next": {
+                    "type": int,
+                    "value_function": lambda data: data.get("channelID"),
+                    "tags_function": lambda data: {"id": data.get("channelID")}
+                },
+                "exclude_filter_function": exclude_filter_docsis31
+            },
             "cable_channel_us_docsis31_modulation": {
                 "data_path": "data.channelUs.docsis31",
                 "type": list,
