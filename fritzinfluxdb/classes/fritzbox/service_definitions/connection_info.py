@@ -448,6 +448,16 @@ lua_services.append({
                 },
                 "exclude_filter_function": exclude_filter_docsis30
             },
+            "cable_channel_ds_docsis30_channel": {
+                "data_path": "data.channelDs.docsis30",
+                "type": list,
+                "next": {
+                    "type": int,
+                    "value_function": lambda data: data.get("channelID"),
+                    "tags_function": lambda data: {"id": data.get("channelID")}
+                },
+                "exclude_filter_function": exclude_filter_docsis30
+            },
             "cable_channel_ds_docsis30_non_corrected_errors": {
                 "data_path": "data.channelDs.docsis30",
                 "type": list,
@@ -578,6 +588,16 @@ lua_services.append({
                 "next": {
                     "type": float,
                     "value_function": lambda data: data.get("powerLevel"),
+                    "tags_function": lambda data: {"id": data.get("channelID")}
+                },
+                "exclude_filter_function": exclude_filter_docsis30
+            },
+            "cable_channel_us_docsis30_channel": {
+                "data_path": "data.channelUs.docsis30",
+                "type": list,
+                "next": {
+                    "type": int,
+                    "value_function": lambda data: data.get("channelID"),
                     "tags_function": lambda data: {"id": data.get("channelID")}
                 },
                 "exclude_filter_function": exclude_filter_docsis30
