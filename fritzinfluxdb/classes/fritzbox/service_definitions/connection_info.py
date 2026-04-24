@@ -356,22 +356,12 @@ lua_services.append({
         "value_instances": {
 
             # DOCSIS 3.1 down stream
-            "cable_channel_ds_docsis31_type": {
-                "data_path": "data.channelDs.docsis31",
-                "type": list,
-                "next": {
-                    "type": str,
-                    "value_function": lambda data: data.get("type"),
-                    "tags_function": lambda data: {"id": data.get("channelID")}
-                },
-                "exclude_filter_function": exclude_filter_docsis31
-            },
             "cable_channel_ds_docsis31_channel": {
                 "data_path": "data.channelDs.docsis31",
                 "type": list,
                 "next": {
                     "type": int,
-                    "value_function": lambda data: data.get("channel"),
+                    "value_function": lambda data: data.get("channelID"),
                     "tags_function": lambda data: {"id": data.get("channelID")}
                 },
                 "exclude_filter_function": exclude_filter_docsis31
